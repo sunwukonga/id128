@@ -15,7 +15,7 @@ class ByteArray {
 	}
 
 	generateRandomFilled() {
-		return randomBytes(MAX_BYTES);
+		return new Uint8Array( randomBytes(MAX_BYTES) );
 	}
 
 	generateZeroFilled() {

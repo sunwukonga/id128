@@ -21,6 +21,14 @@ class BaseId {
 		return this[_bytes];
 	}
 
+	get array() {
+		return this[_bytes];
+	}
+
+	get buffer() {
+		return Buffer.from( this[_bytes] );
+	}
+
 	get [Symbol.toStringTag]() {
     return this.constructor.name;
   }
